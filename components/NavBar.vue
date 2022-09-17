@@ -1,15 +1,19 @@
 <template>
     <div class="font-Lalezar">
+
         <!-- First nav -->
         <div class="bg-white text-textGray">
-            <div class="container mx-auto h-[4.625rem] pt-[0.75rem] flex flex-row justify-between items-center px-1">
+            <div
+                class="container mx-auto h-[4.625rem] pt-[0.75rem] flex flex-row-reverse sm:flex-row justify-between items-center px-1">
+
                 <!-- Logo -->
-                <div>
-                    <p class="text-[1.5rem]">MyHood</p>
+                <div class=" mx-auto sm:mx-0">
+                    <Logo />
                 </div>
+
+
                 <!-- Search -->
                 <div class="hidden md:flex">
-
                     <form class="flex items-center w-[15rem]">
                         <label for="simple-search" class="sr-only">Search</label>
                         <div class="relative w-full">
@@ -26,54 +30,64 @@
                                 placeholder="جست و جو کنید" required="">
                         </div>
                     </form>
-
-
                 </div>
+
+
                 <!-- Login Button -->
-                <div>
+                <div class="hidden sm:flex">
                     <button class="hover:border-b-4 hover:text-black border-textGray text-[1.5rem] ">
                         <p>ورود | ثبت نام</p>
                     </button>
                 </div>
             </div>
         </div>
+
+
         <!-- Second nav -->
         <div class="bg-bgBg text-textGray">
-            <div class="container mx-auto md:border border-yellowHood rounded-b-lg">
+            <div class="container mx-auto md:h-[2.3125rem] md:border w-full border-yellowHood rounded-b-xl "
+                id="navbar-default">
                 <ul
-                    class="flex flex-col justify-center space-x-20 text-center items-center space-y-1 pt-[0.25rem] text-[1rem] md:h-[2.3125rem] md:flex-row">
+                    class="flex flex-col justify-center space-y-1 text-center text-sm items-center pt-[0.25rem] pb-[0.25rem]   md:flex-row md:text-[1rem] md:space-x-14 md:justify-center md:items-center">
 
-                    <li><a href="#">مقالات</a></li>
-                    <li><a href="#">مزیت های ما</a></li>
-                    <li><a href="#">ارتباط با ما</a></li>
-                    <li><a href="#">درباره ما</a></li>
-                    <li><a href="#">پست های اینستاگرام</a></li>
+                    <li class="pr-4 pl-8 pt-1">
+                        <NuxtLink to="/" class="hidden md:block">دسته بندی ها</NuxtLink>
+                    </li>
 
-                    <!-- inaro bayad ba ina bezanam badan -->
-                    <!-- <li>
-                        <nuxt-link></nuxt-link>
+                    <li class="pr-4">
+                        <NuxtLink to="/" class="block">مقالات</NuxtLink>
                     </li>
-                    <li>
-                        <nuxt-link></nuxt-link>
+
+                    <li class="pr-4">
+                        <NuxtLink to="/about" class="block">مزیت های ما</NuxtLink>
                     </li>
-                    <li>
-                        <nuxt-link></nuxt-link>
+
+                    <li class="pr-4">
+                        <NuxtLink to="/" class="block">ارتباط با ما</NuxtLink>
                     </li>
-                    <li>
-                        <nuxt-link></nuxt-link>
+
+                    <li class="pr-4">
+                        <NuxtLink to="/" class="block">درباره ما</NuxtLink>
                     </li>
-                    <li>
-                        <nuxt-link></nuxt-link>
-                    </li> -->
+
+                    <li class="pr-4">
+                        <NuxtLink to="/" class="block md:hidden lg:block">پست های اینستاگرام</NuxtLink>
+                    </li>
+
                 </ul>
             </div>
         </div>
-
     </div>
+
 </template>
 
 <script>
+import Logo from "./Logo.vue"
+
 export default {
-    name: "NavBar"
+    name: "NavBar",
+    components: { Logo }
 }
+
 </script>
+
