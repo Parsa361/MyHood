@@ -1,5 +1,8 @@
 <template>
-    <NavBar />
+    <div>
+        <NavBar />
+        <Nuxt />
+    </div>
 </template>
 
 <style>
@@ -12,7 +15,7 @@ body {
 import NavBar from '~/components/NavBar.vue';
 export default {
     components: {
-    NavBar,
-}
+        NavBar,
+    }
 }
 </script>
