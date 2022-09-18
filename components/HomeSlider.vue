@@ -1,7 +1,9 @@
 <template>
 
     <div>
-        <div id="animation-carousel" class="relative container mx-auto my-[2rem]" data-carousel="static">
+        <div id="animation-carousel"
+            class="relative container mx-auto my-[0.25rem] sm:my-[1.5rem] md:my-0 lg:my-[1.5rem]"
+            data-carousel="static">
             <!-- Carousel wrapper -->
             <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
                 <!-- Item 1 -->
@@ -9,6 +11,12 @@
                     <img src="~/assets/images/slide2-2.png"
                         class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                         alt="Image slider 1">
+                    <!-- Text -->
+                    <div
+                        class="hidden lg:flex absolute lg:right-[25rem] xl:right-[35rem] 2xl:right-[45rem] top-[8rem] text-center font-Lalezar md:text-[1.5rem] md:leading-[2.5rem] z-10">
+                        <p>لذت خرید هود های زیبا با قیمت اقتصادی را با ما تجربه کنید<br>
+                            شرکت هود من ارائه دهنده بهترین خدمات تجهیز آشپزخانه ی شما</p>
+                    </div>
                 </div>
                 <!-- Item 2 -->
                 <div class="duration-200 ease-linear absolute inset-0 transition-all transform -translate-x-full z-10"
@@ -51,7 +59,7 @@
 </template>
 
 <script>
-    export default {
-        name: "HomeSlider"
-    }
+export default {
+    name: "HomeSlider"
+}
 </script>
