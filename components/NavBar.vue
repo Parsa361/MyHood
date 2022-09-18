@@ -7,7 +7,7 @@
                 class="container mx-auto h-[4.625rem] pt-[0.75rem] flex flex-row-reverse sm:flex-row justify-between items-center px-1">
 
                 <!-- Logo -->
-                <div class=" mx-auto sm:mx-0">
+                <div class="hidden sm:flex sm:mx-0">
                     <Logo />
                 </div>
 
@@ -34,8 +34,8 @@
 
 
                 <!-- Login Button -->
-                <div class="hidden sm:flex">
-                    <button class="hover:border-b-4 hover:text-black border-textGray text-[1.5rem] ">
+                <div class="mx-auto sm:mx-0">
+                    <button class="hover:border-b-4 hover:text-black border-textGray text-md md:text-[1.5rem]">
                         <p>ورود | ثبت نام</p>
                     </button>
                 </div>
