@@ -1,7 +1,12 @@
 <template>
     <div>
         <NavBar />
-        <Nuxt />
+
+        <div>
+            <Nuxt />
+        </div>
+
+        <FooterCom />
     </div>
 </template>
 
@@ -13,9 +18,11 @@ body {
 
 <script>
 import NavBar from '~/components/NavBar.vue';
+import FooterCom from '~/components/FooterCom.vue';
 export default {
     components: {
         NavBar,
+        FooterCom
     }
 }
 </script>
