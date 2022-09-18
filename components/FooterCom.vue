@@ -1,10 +1,10 @@
 <template>
     <!-- footer bg -->
-    <footer class="p-4 bg-textGray sm:p-6 dark:bg-gray-900">
+    <footer class="p-4 bg-textGray sm:p-6 dark:bg-gray-900 text-[0.5rem] sm:text-[1rem]">
         <!-- Container -->
-        <div class="container mx-auto md:flex md:justify-start">
+        <div class="container mx-auto items-center sm:flex sm:justify-start">
             <!-- Addresses and phone numbers -->
-            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
                 <div>
                     <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">آدرس ها و مسیر ارتباط با
                         ما</h2>
@@ -71,6 +71,9 @@
 <style>
 footer {
     bottom: 0;
+    left: 0;
+    right: 0;
+    position:relative;
 }
 </style>
 
