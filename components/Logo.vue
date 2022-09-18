@@ -1,6 +1,8 @@
 <template>
     <div>
-        <p class="font-Lalezar text-textGray text-md md:text-[1.125rem] lg:text-[1.5rem]">MyHood</p>
+        <NuxtLink to="/" class="font-Lalezar text-textGray text-md md:text-[1.125rem] lg:text-[1.5rem]">
+            MyHood
+        </NuxtLink>
     </div>
 </template>
 
