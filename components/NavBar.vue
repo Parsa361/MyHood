@@ -48,29 +48,29 @@
             <div class="container mx-auto md:h-[2.3125rem] md:border w-full border-yellowHood rounded-b-xl "
                 id="navbar-default">
                 <ul
-                    class="flex flex-col justify-center space-y-1 text-center text-sm items-center pt-[0.25rem] pb-[0.25rem]   md:flex-row md:text-[1rem] md:space-x-14 md:justify-center md:items-center">
+                    class="flex flex-col justify-center space-y-1 text-center text-sm items-center pt-[0.25rem] pb-[0.25rem]   md:flex-row md:text-[1rem] md:gap-20 md:justify-center md:items-center">
 
-                    <li class="pr-4 pl-8 pt-1">
+                    <li>
                         <NuxtLink to="/" class="hidden md:block">دسته بندی ها</NuxtLink>
                     </li>
 
-                    <li class="pr-4">
+                    <li>
                         <NuxtLink to="/" class="block">مقالات</NuxtLink>
                     </li>
 
-                    <li class="pr-4">
+                    <li>
                         <NuxtLink to="/about" class="block">مزیت های ما</NuxtLink>
                     </li>
 
-                    <li class="pr-4">
+                    <li>
                         <NuxtLink to="/" class="block">ارتباط با ما</NuxtLink>
                     </li>
 
-                    <li class="pr-4">
+                    <li>
                         <NuxtLink to="/" class="block">درباره ما</NuxtLink>
                     </li>
 
-                    <li class="pr-4">
+                    <li>
                         <NuxtLink to="/" class="block md:hidden lg:block">پست های اینستاگرام</NuxtLink>
                     </li>
 
