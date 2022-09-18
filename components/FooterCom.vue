@@ -10,7 +10,7 @@
                         ما</h2>
                     <ul class="text-white dark:text-gray-400">
                         <li class="mb-4">
-                            <a href="#" class="hover:underline">sample@gmail.com</a>
+                            <a href="#" class="hover:underline">myhood@gmail.com</a>
                         </li>
                         <li class="mb-4">
                             <p>+98 9332333403</p>
@@ -67,6 +67,12 @@
     </footer>
 
 </template>
+
+<style>
+footer {
+    bottom: 0;
+}
+</style>
 
 <script>
 export default {
