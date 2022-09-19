@@ -1,14 +1,15 @@
 <template>
     <!-- footer bg -->
-    <footer class="p-4 bg-textGray sm:p-6 dark:bg-gray-900 text-[0.5rem] sm:text-[1rem]">
+    <footer class="p-4 bg-textGray sm:p-6 dark:bg-gray-900">
         <!-- Container -->
         <div class="container mx-auto items-center sm:flex sm:justify-start">
             <!-- Addresses and phone numbers -->
             <div>
                 <div>
-                    <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">آدرس ها و مسیر ارتباط با
+                    <h2 class="mb-6 text-sm font-Lalezar text-white dark:text-white text-[0.5rem] sm:text-[1.25rem]">
+                        آدرس ها و مسیر ارتباط با
                         ما</h2>
-                    <ul class="text-white dark:text-gray-400">
+                    <ul class="text-white dark:text-gray-400 font-VazirMedium text-[0.5rem] sm:text-[1.25rem]">
                         <li class="mb-4">
                             <a href="#" class="hover:underline">myhood@gmail.com</a>
                         </li>
@@ -73,7 +74,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    position:relative;
+    position: relative;
 }
 </style>
 
