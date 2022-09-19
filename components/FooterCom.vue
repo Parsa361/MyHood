@@ -6,10 +6,10 @@
             <!-- Addresses and phone numbers -->
             <div>
                 <div>
-                    <h2 class="mb-6 text-sm font-Lalezar text-white dark:text-white text-[0.5rem] sm:text-[1.25rem]">
+                    <h2 class="mb-6 text-sm font-Lalezar text-white dark:text-white text-[0.5rem] md:text-[0.75rem] lg:text-[1.25rem]">
                         آدرس ها و مسیر ارتباط با
                         ما</h2>
-                    <ul class="text-white dark:text-gray-400 font-VazirMedium text-[0.5rem] sm:text-[1.25rem]">
+                    <ul class="text-white dark:text-gray-400 font-VazirMedium text-[0.5rem] md:text-[0.75rem] lg:text-[1.25rem]">
                         <li class="mb-4">
                             <a href="#" class="hover:underline">myhood@gmail.com</a>
                         </li>
