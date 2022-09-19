@@ -18,6 +18,9 @@ module.exports = {
     },
     fontFamily: {
       Lalezar: ["Lalezar"],
+      VazirBold: ["Vazir-Bold"],
+      VazirLight: ["Vazir-Light"],
+      VazirMedium: ["Vazir-Medium"],
     }
   },
   plugins: [require('flowbite/plugin')],
