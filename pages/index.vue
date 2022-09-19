@@ -1,13 +1,17 @@
 <template>
-  <HomeSlider />
+  <div>
+    <HomeSlider />
+    <IconBar />
+  </div>
 </template>
 
 <script>
 import HomeSlider from '~/components/HomeSlider.vue';
+import IconBar from '~/components/Icons.vue';
 
 export default {
   name: "IndexPage",
-  components: { HomeSlider },
+  components: { HomeSlider, IconBar, },
 
   head: {
     title: 'Home page',
