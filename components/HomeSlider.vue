@@ -7,7 +7,8 @@
             <!-- Carousel wrapper -->
             <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
                 <!-- Item 1 -->
-                <div class="duration-200 ease-linear absolute inset-0 transition-all transform" data-carousel-item="">
+                <div class="hidden duration-200 ease-in absolute inset-0 transition-all transform"
+                    data-carousel-item="">
                     <img src="~/assets/images/slide2-2.png"
                         class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                         alt="Image slider 1">
@@ -19,7 +20,7 @@
                     </div>
                 </div>
                 <!-- Item 2 -->
-                <div class="duration-200 ease-linear absolute inset-0 transition-all transform -translate-x-full z-10"
+                <div class="hidden duration-200 ease-in absolute inset-0 transition-all transform -translate-x-full z-10"
                     data-carousel-item="">
                     <img src="~/assets/images/slide3.png"
                         class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
