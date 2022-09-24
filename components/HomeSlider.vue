@@ -15,46 +15,47 @@
                         alt="Image slider 1">
                     <!-- Text -->
                     <div
-                        class="hidden lg:flex absolute lg:right-[10rem] xl:right-[8rem] 2xl:right-[13rem] top-[8rem] text-center text-white font-Lalezar lg:text-[1rem] xl:text-[1.5rem] md:leading-[2.5rem] z-10">
+                        class="hidden lg:flex absolute lg:right-[10rem] xl:right-[8rem] 2xl:right-[13rem] top-[8rem] text-center text-white font-Lalezar lg:text-[1rem] xl:text-[1.5rem] md:leading-[2.5rem]">
                         <p>بهترین هود های دنیا با ما<br>
                             شرکت هود من ارائه دهنده بهترین خدمات تجهیز آشپزخانه ی شما</p>
                     </div>
                 </div>
                 <!-- Item 2 -->
-                <div class="hidden duration-500 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10"
+                <div class="duration-500 ease-in-out absolute inset-0 transition-all transform -translate-x-full"
                     data-carousel-item="active">
                     <img src="~/assets/images/slide2-2.png"
                         class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                         alt="Image slider 2">
                     <!-- Text -->
                     <div
-                        class="hidden lg:flex absolute lg:right-[25rem] xl:right-[35rem] 2xl:right-[45rem] top-[8rem] text-center font-Lalezar md:text-[1.5rem] md:leading-[2.5rem] z-10">
+                        class="hidden lg:flex absolute lg:right-[25rem] xl:right-[35rem] 2xl:right-[45rem] top-[8rem] text-center font-Lalezar md:text-[1.5rem] md:leading-[2.5rem]">
                         <p>لذت خرید هود های زیبا با قیمت اقتصادی را با ما تجربه کنید<br>
                             شرکت هود من ارائه دهنده بهترین خدمات تجهیز آشپزخانه ی شما</p>
                     </div>
                 </div>
 
                 <!-- Item 3 -->
-                <div class="hidden duration-500 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
+                <div class="duration-500 ease-in-out absolute inset-0 transition-all transform translate-x-0"
                     data-carousel-item="">
-                    <img src="~/assets/images/Untitled-2.jpg"
+                    <img src="~/assets/images/Untitled-2.png"
                         class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                         alt="Image slider 3">
                     <!-- Text -->
                     <div
-                        class="hidden lg:flex absolute lg:right-[10rem] xl:right-[8rem] 2xl:right-[13rem] top-[8rem] text-center text-white font-Lalezar lg:text-[1rem] xl:text-[1.5rem] md:leading-[2.5rem] z-10">
+                        class="hidden lg:flex absolute lg:right-[10rem] xl:right-[8rem] 2xl:right-[13rem] top-[8rem] text-center text-white font-Lalezar lg:text-[1rem] xl:text-[1.5rem] md:leading-[2.5rem]">
                         <p>بهترین هود های دنیا با ما<br>
                             شرکت هود من ارائه دهنده بهترین خدمات تجهیز آشپزخانه ی شما</p>
                     </div>
                 </div>
                 <!-- Item 4 -->
-                <div class="duration-500 ease-linear absolute inset-0 transition-all transform translate-x-full z-10"
+                <div class="hidden duration-500 ease-linear absolute inset-0 transition-all transform translate-x-full"
                     data-carousel-item="">
                     <img src="~/assets/images/slide4.png"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        alt="image slider 4">
                     <!-- Text -->
                     <div
-                        class="hidden lg:flex absolute lg:right-[25rem] xl:right-[35rem] 2xl:right-[45rem] top-[8rem] text-center font-Lalezar md:text-[1.5rem] md:leading-[2.5rem] z-10">
+                        class="hidden lg:flex absolute lg:right-[25rem] xl:right-[35rem] 2xl:right-[45rem] top-[8rem] text-center font-Lalezar md:text-[1.5rem] md:leading-[2.5rem]">
                         <p>لذت خرید هود های زیبا با قیمت اقتصادی را با ما تجربه کنید<br>
                             شرکت هود من ارائه دهنده بهترین خدمات تجهیز آشپزخانه ی شما</p>
                     </div>
