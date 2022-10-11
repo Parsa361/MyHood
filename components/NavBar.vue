@@ -5,13 +5,10 @@
         <div class="bg-white text-textGray">
             <div
                 class="container mx-auto h-[4.625rem] pt-[0.75rem] flex flex-row-reverse md:flex-row justify-between items-center px-1">
-
                 <!-- Logo -->
                 <div class="hidden md:flex sm:mx-0">
                     <Logo />
                 </div>
-
-
                 <!-- Search -->
                 <div class="hidden md:flex">
                     <form class="flex items-center w-[15rem]">
@@ -32,10 +29,10 @@
                     </form>
                 </div>
 
-
                 <!-- Login Button -->
                 <div>
-                    <button class="hover:border-b-4 hover:text-black border-textGray text-md md:text-[1.125rem] lg:text-[1.5rem]">
+                    <button
+                        class="hover:border-b-4 hover:text-black border-textGray text-md md:text-[1.125rem] lg:text-[1.5rem]">
                         <p>ورود | ثبت نام</p>
                     </button>
                 </div>
@@ -53,7 +50,6 @@
 
             </div>
         </div>
-
 
         <!-- Second nav -->
         <div class="bg-bgBg text-textGray">
