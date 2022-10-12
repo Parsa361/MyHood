@@ -1,6 +1,6 @@
 <template>
     <!-- Container -->
-    <div class="container mx-auto my-5">
+    <div class="container mx-auto my-5 xl:my-[2.25rem]">
         <ul class="hidden md:flex flex-row justify-around items-center text-center">
             <!-- Item 1 -->
             <li class="flex flex-col justify-center items-center md:text-[0.75rem] lg:text-[1rem]">
