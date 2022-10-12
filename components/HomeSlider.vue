@@ -5,7 +5,7 @@
             class="relative container mx-auto my-[0.25rem] sm:my-[1.5rem] md:my-0 lg:my-[1.5rem]"
             data-carousel="static">
             <!-- Carousel wrapper -->
-            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <div class="relative h-40 overflow-hidden rounded-lg md:h-[18rem] lg:h-[20rem] xl:h-[24rem]">
 
                 <!-- Item 1 -->
                 <div class="hidden duration-500 ease-in-out absolute inset-0 transition-all transform"
@@ -62,9 +62,9 @@
                 </div>
             </div>
 
-            <!-- Slider controls -->
+            <!-- Slider controls Button-->
             <button type="button"
-                class="absolute top-[6.5rem] md:top-40 left-0 z-30 flex items-center justify-center h-fit mx-4 cursor-pointer group focus:outline-none"
+                class="absolute top-[4.5rem] md:top-[7rem] lg:top-[8.5rem] xl:top-[10.5rem] left-0 z-30 flex items-center justify-center h-fit mx-4 cursor-pointer group focus:outline-none"
                 data-carousel-prev="">
                 <span
                     class="inline-flex items-center justify-center w-5 h-5 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
@@ -76,8 +76,9 @@
                     <span class="sr-only">Previous</span>
                 </span>
             </button>
+
             <button type="button"
-                class="absolute top-[6.5rem] md:top-40 right-0 z-30 flex items-center justify-center h-fit mx-4 cursor-pointer group focus:outline-none"
+                class="absolute top-[4.5rem] md:top-[7rem] lg:top-[8.5rem] xl:top-[10.5rem] right-0 z-30 flex items-center justify-center h-fit mx-4 cursor-pointer group focus:outline-none"
                 data-carousel-next="">
                 <span
                     class="inline-flex items-center justify-center w-5 h-5 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
