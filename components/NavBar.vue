@@ -65,7 +65,7 @@
 
                     <li
                         class="w-screen hover:text-white hover:bg-yellowHood border-white sm:hover:none md:w-fit md:rounded-full md:px-2">
-                        <NuxtLink to="/" class="block w-full">مقالات</NuxtLink>
+                        <NuxtLink to="/articles" class="block w-full">مقالات</NuxtLink>
                     </li>
 
                     <li
