@@ -19,32 +19,27 @@
 
 <script>
 import ArticleCom from '~/components/Article.vue';
+import axios from 'axios'
 export default {
     name: "Articles",
     data() {
         return {
-            articles: [
-                {
-                    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero id blanditiis, porro eius sequi iure corrupti.Vel quis id expedita nesciunt dicta, deleniti cupiditate cum, fuga repellendus rerum, similique totam!",
-                    image: "fix-hood",
-                    description: 'هود های قوی',
-                    title: "آموزش مقدماتی تعمیر ایرادات جزعی هود های مخفی"
-                },
-                {
-                    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero id blanditiis, porro eius sequi iure corrupti.Vel quis id expedita nesciunt dicta, deleniti cupiditate cum, fuga repellendus rerum, similique totam!",
-                    image: "clean-hood",
-                    description: 'هود های زیبا',
-                    title: "روش تمیز کردن انواع هودها"
-                },
-                {
-                    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero id blanditiis, porro eius sequi iure corrupti.Vel quis id expedita nesciunt dicta, deleniti cupiditate cum, fuga repellendus rerum, similique totam!",
-                    image: "hood-diversity",
-                    description: 'هود های خوشگل بابا',
-                    title: "هر آنچه درباره هود مناسب آشپزخانه خود باید بدانید"
-                },
-            ]
+            articles: []
         };
     },
-    components: { ArticleCom }
+    components: { ArticleCom },
+    mounted() {
+            this.getArticles()
+        },
+        methods: {
+            async getArticles() {
+                try {
+                    const res = await this.$axios.$get('/api/v1/articles');
+                    this.articles= res
+                } catch (err) {
+                    console.log(err)
+                }
+            }
+        }
 }
 </script>
