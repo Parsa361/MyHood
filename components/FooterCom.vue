@@ -1,6 +1,6 @@
 <template>
     <!-- footer bg -->
-    <footer class="p-4 bg-textGray sm:p-6 dark:bg-gray-900">
+    <footer class="p-4 mt-5 bg-textGray sm:p-6 dark:bg-gray-900">
         <!-- Container -->
         <div class="container mx-auto items-center sm:flex sm:justify-start">
             <!-- Addresses and phone numbers -->
@@ -117,8 +117,5 @@ footer {
 <script>
 export default {
     name: "FooterCom",
-    components: {
-
-    }
 }
 </script>
