@@ -10,6 +10,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      lineClamp: {
+        8: '8',
+        10: '10',
+
+      },
       colors: {
         yellowHood: '#FCB900',
         textGray: '#625B5B',
@@ -25,5 +30,6 @@ module.exports = {
   },
   plugins: [
     require('flowbite/plugin'),
+    require("@tailwindcss/line-clamp")
   ],
 }
