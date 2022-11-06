@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import ArticleCom from '~/components/Article.vue';
+import ArticleCom from '~/components/ArticleCom.vue';
 export default {
     name: "Articles",
     data() {
