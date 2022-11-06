@@ -30,12 +30,12 @@
                 </div>
 
                 <!-- Login Button -->
-                <div>
+                <NuxtLink to="/login">
                     <button
                         class="hover:border-b-4 hover:text-black border-textGray text-md md:text-[1.125rem] lg:text-[1.5rem]">
-                        <p>ورود | ثبت نام</p>
+                        ورود | ثبت نام
                     </button>
-                </div>
+                </NuxtLink>
 
                 <!-- Menu button -->
                 <div class="flex md:hidden items-center hover:shadow-lg shadow-black">
@@ -54,7 +54,7 @@
         <!-- Second nav -->
         <div class="bg-bgBg text-textGray">
             <div class="md:block container mx-auto md:h-[2.3125rem] md:border border-yellowHood rounded-b-xl md:pt-[0.25rem]"
-                id="navbar-default" :class="{hidden: showMobileMenu}">
+                id="navbar-default" :class="{ hidden: showMobileMenu }">
                 <ul
                     class="flex flex-col justify-center text-center text-sm items-center w-full pt-[0.25rem] pb-[0.25rem] md:flex-row md:text-[1rem] md:gap-12 lg:gap-20 md:justify-center md:items-center">
 
