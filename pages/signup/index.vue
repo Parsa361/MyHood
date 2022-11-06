@@ -1,10 +1,10 @@
 <template>
     <div class="container mx-auto my-[8rem]">
 
-        <form class="font-Lalezar bg-white p-[2rem] rounded-tr-xl rounded-bl-xl" @submit.prevent="submit">
+        <form class="font-Lalezar bg-white p-[2rem] rounded-tr-xl rounded-bl-xl" @submit.prevent="onSubmit">
 
             <div class="relative z-0 mb-[1.75rem] w-full group">
-                <input v-model="form.username" type="phone" name="floating_phone" id="floating_phone"
+                <input v-model="information.username" type="phone" name="floating_phone" id="floating_phone"
                     class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-yellowHood focus:outline-none focus:ring-0 focus:border-yellowHood peer"
                     placeholder=" " required="">
                 <label for="floating_phone"
@@ -29,14 +29,15 @@
             </div>
             <div class="grid md:grid-cols-2 md:gap-6">
                 <div class="relative z-0 mb-[1.75rem] w-full group">
-                    <input v-model="form.firstname" type="text" name="floating_first_name" id="floating_first_name"
+                    <input v-model="information.firstname" type="text" name="floating_first_name"
+                        id="floating_first_name"
                         class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-yellowHood focus:outline-none focus:ring-0 focus:border-yellowHood peer"
                         placeholder=" " required="">
                     <label for="floating_first_name"
                         class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75  top-1 -z-10 origin-[0] peer-focus:right-0 peer-focus:text-yellowHood peer-focus:dark:text-yellowHood peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">نام</label>
                 </div>
                 <div class="relative z-0 mb-[1.75rem] w-full group">
-                    <input v-model="form.lastname" type="text" name="floating_last_name" id="floating_last_name"
+                    <input v-model="information.lastname" type="text" name="floating_last_name" id="floating_last_name"
                         class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-yellowHood focus:outline-none focus:ring-0 focus:border-yellowHood peer"
                         placeholder=" " required="">
                     <label for="floating_last_name"
@@ -58,24 +59,18 @@
 export default {
     data() {
         return {
-            form: {},
+            information: {},
             password1: '',
             password2: '',
         }
     },
     methods: {
-        async submit() {
+        async onSubmit() {
             if (this.password1 == this.password2) {
-                this.form.password = this.password1
+                this.information.password = this.password1
             }
             await this.$axios
-                .post('api/v1/users', {
-                    username: this.username,
-                    password: this.password,
-                    password2: this.password2,
-                    firstname: this.firstname,
-                    lastname: this.lastname
-                })
+                .$post('/api/v1/users/', this.information)
                 .then(r => {
                     console.log(r.data);
                 })
