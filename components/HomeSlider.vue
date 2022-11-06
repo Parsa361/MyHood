@@ -3,7 +3,7 @@
     <div>
         <div id="animation-carousel"
             class="relative container mx-auto mt-[0.25rem] sm:mt-[1.5rem] md:mt-0 lg:mt-[1.5rem]"
-            data-carousel="static">
+            data-carousel="slide">
             <!-- Carousel wrapper -->
             <div class="relative h-40 overflow-hidden rounded-lg md:h-[18rem] lg:h-[20rem] xl:h-[24rem]">
 
