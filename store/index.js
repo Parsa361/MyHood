@@ -14,11 +14,14 @@ export const getters = {}
 
 export const mutations = {
     initializeStore(state) {
-        const token = localStorage.getItem('token')
-        if (token) {
-            state.user.token = token
-            state.isAuthenticated = true
-            axios.defaults.headers.common.Authorization = 'Token ' + token
+        if (process.client) {
+            const token = localStorage.getItem('token')
+
+            if (token) {
+                state.user.token = token
+                state.isAuthenticated = true
+                axios.defaults.headers.common.Authorization = 'Token ' + token
+            }
         }
     },
     setUser(state, user) {
