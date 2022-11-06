@@ -3,6 +3,7 @@
     <HomeSlider />
     <IconBar />
     <CategoriesSection />
+    <ArticleSec />
   </div>
 </template>
 
@@ -10,10 +11,11 @@
 import HomeSlider from "~/components/HomeSlider.vue";
 import IconBar from "~/components/Icons.vue";
 import CategoriesSection from "~/components/CategoriesSec.vue";
+import ArticleSec from "~/components/ArticleSec.vue";
 
 export default {
   name: "IndexPage",
-  components: { HomeSlider, IconBar, CategoriesSection },
+  components: { HomeSlider, IconBar, CategoriesSection, ArticleSec },
   head() {
     return {
       title: "صفحه اصلی MyHood",
