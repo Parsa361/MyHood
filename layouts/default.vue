@@ -41,5 +41,8 @@ export default {
 
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
+  beforeCreate() {
+    this.$store.commit("initializeStore");
+  }
 };
 </script>
