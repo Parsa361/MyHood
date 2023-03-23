@@ -4,7 +4,7 @@
             class="flex flex-col md:flex-row mb-5 min-h-[10em] md:bg-white rounded-tl-xl rounded-bl-xl">
             <!-- Img -->
             <NuxtLink :to="`/articles/${article.id}`" class="mx-auto md:mx-0">
-                <img :src="require(`~/assets/images/${article.img}.png`)" :alt="article.img" class="h-[10em]">
+                <img :src="require(`~/static/images/${article.img}.png`)" :alt="article.img" class="h-[10em]">
             </NuxtLink>
             <!-- Text -->
             <div class="flex flex-col py-5 mt-2 bg-white md:bg-none rounded-lg">

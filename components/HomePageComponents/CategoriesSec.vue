@@ -1,36 +1,26 @@
 <template>
   <div>
     <!-- Categories text with 2 yellow Svg -->
-    <div class="md:my-[1rem] md:mt-[4rem] mx-auto flex flex-row items-center justify-center font-Lalezar gap-5">
-      <svg xmlns="http://www.w3.org/2000/svg" width="111" height="3" class="flex w-[5rem] md:w-[7rem]"
-        viewBox="0 0 111 3">
-        <line id="Line_2" data-name="Line 2" x2="108" transform="translate(1.5 1.5)" fill="none" stroke="#fcb900"
-          stroke-linecap="round" stroke-width="3" />
-      </svg>
-      <span class="font-Lalezar text-[0.75rem] md:text-[1rem] lg:text-[1.5rem]">دسته بندی محصولات</span>
-      <svg xmlns="http://www.w3.org/2000/svg" width="111" height="3" class="flex w-[5rem] md:w-[7rem]"
-        viewBox="0 0 111 3">
-        <line id="Line_2" data-name="Line 2" x2="108" transform="translate(1.5 1.5)" fill="none" stroke="#fcb900"
-          stroke-linecap="round" stroke-width="3" />
-      </svg>
-    </div>
+    <CategoryTitle>دسته بندی محصولات</CategoryTitle>
+
 
 
     <!-- Container -->
     <div class="container mx-auto my-[3.5rem] flex flex-col mb-[0.5rem]" v-for="(cat, index) in category" :key="index"
       :class="index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'">
 
-      <!-- Image 1-->
+      <!-- Image-->
       <div class="mx-auto max-w-sm md:w-1/2 md:mx-0 md:max-w-none mb-1 md:mb-0">
-        <img :src="require(`~/assets/images/${cat.catImg}.png`)" alt="hidden hood"
+        <img :src="require(`~/static/images/${cat.catImg}.png`)" alt="hidden hood"
           class="object-cover object-center h-full" />
       </div>
-      <!-- Text 1-->
+      <!-- Text-->
       <div class="flex flex-col relative md:w-1/2 py-2 bg-white rounded-lg"
-        :class="index % 2 === 0 ? 'md:mr-5 md:pr-2': 'md:ml-5 md:pr-2'">
+        :class="index % 2 === 0 ? 'md:mr-5 md:pr-2' : 'md:ml-5 md:pr-2'">
         <p class="text-center md:text-start font-Lalezar text-[0.75rem] xl:mb-[1rem] md:text-[1.5rem] truncate">
-          {{cat.catTitle}}</p>
-        <p class="lg:flex text-center md:text-start font-VazirLight line-clamp-2 md:line-clamp-4 lg:line-clamp-6 xl:line-clamp-8 text-[0.75rem] md:text-[1rem] xl:mb-[1rem]">
+          {{ cat.catTitle }}</p>
+        <p
+          class="lg:flex text-center md:text-start font-VazirLight line-clamp-2 md:line-clamp-4 lg:line-clamp-6 xl:line-clamp-8 text-[0.75rem] md:text-[1rem] xl:mb-[1rem]">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
           استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
           در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
@@ -43,39 +33,38 @@
           نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل
           دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
         </p>
-        <button
-          class="mx-auto mt-2 md:mt-0 md:absolute md:left-2 md:bottom-2 lg:left-6 lg:bottom-6 w-[7rem] lg:w-[10rem] h-[2rem] lg:h-[3rem] bg-yellowHood rounded-tr-lg rounded-bl-lg hover:shadow-lg hover:drop-shadow-lg hover:shadow-yellow-400">
-          <p class="text-[0.75rem] lg:text-[1rem] text-center text-textGray mb-1 px-1 hover:text-white">جزئیات بیشتر
-          </p>
-        </button>
+        <div class="md:text-left text-center ml-5">
+          <ButtonUI>جزئیات بیشتر</ButtonUI>
+        </div>
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
+import ButtonUI from '../ButtonUI.vue';
+import CategoryTitle from '../CategoryTitle.vue'
+
 export default {
   name: "CategoriesSection",
   data() {
     return {
-
       category: [
         {
-          catTitle: 'هود مخفی',
-          catImg: 'hidden'
-
+          catTitle: "هود مخفی",
+          catImg: "hidden"
         },
         {
-          catTitle: 'هود مورب',
-          catImg: 'movarab'
+          catTitle: "هود مورب",
+          catImg: "movarab"
         },
         {
-          catTitle: 'هود جزیره ای',
-          catImg: 'island'
+          catTitle: "هود جزیره ای",
+          catImg: "island"
         },
       ]
-    }
+    };
   },
+  components: { ButtonUI, CategoryTitle }
 };
 </script>

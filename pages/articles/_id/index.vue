@@ -2,7 +2,7 @@
     <div>
         <article v-for="article in articles" :key="article.id" class="container mx-auto">
             <div v-if="article.id == $route.params.id">
-                <img :src="require(`~/assets/images/${article.img}.png`)" :alt="article.img" class="mt-5 mx-auto max-w-xs md:max-w-sm lg:max-w-lg h-[15rem] md:h-[20rem] lg:h-[25rem]">
+                <img :src="require(`~/static/images/${article.img}.png`)" :alt="article.img" class="mt-5 mx-auto max-w-xs md:max-w-sm lg:max-w-lg h-[15rem] md:h-[20rem] lg:h-[25rem]">
                 <h1 class="text-center mt-5 font-Lalezar text-[1rem] md:text-[1.25rem] lg:text-[1.5rem]">{{article.title}}</h1>
 
                 <p class="mt-[2.5rem] font-VazirLight text-[0.75rem] md:text-[1rem] lg:text-[1.25rem]">{{article.description}}</p>

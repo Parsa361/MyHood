@@ -3,21 +3,26 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Lalezar";
-    src: url(../Lalezar-Regular.ttf) format("truetype");
+  font-family: "Lalezar";
+  src: url(../Lalezar-Regular.ttf) format("truetype");
 }
+
 @font-face {
-    font-family: 'Vazir-Bold';
-    src: url(../Vazir-Bold.ttf) format('truetype');
-  }
-  
+  font-family: 'Vazir-Bold';
+  src: url(../Vazir-Bold.ttf) format('truetype');
+}
+
 @font-face {
-    font-family: 'Vazir-Light';
-    src: url(../Vazir-Light.ttf) format('truetype');
-  }
-  
+  font-family: 'Vazir-Light';
+  src: url(../Vazir-Light.ttf) format('truetype');
+}
+
 @font-face {
-    font-family: 'Vazir-Bold';
-    src: url(../Vazir-Medium.ttf) format('truetype');
-  }
-  
+  font-family: 'Vazir-Medium';
+  src: url(../Vazir-Medium.ttf) format('truetype');
+}
+
+body {
+  direction: rtl;
+  background-color: #f2f2f2;
+}

@@ -27,9 +27,9 @@
                         Inja bayad edit beshe hanooz khoob nist va kar nemikone
                      -->
           <img srcset="
-              ~/assets/images/about_us.jpg  640w,
-              ~/assets/images/about_lg.jpg  768w,
-              ~/assets/images/about_xl.jpg 1024w
+              ~/static/images/about_us.jpg  640w,
+              ~/static/images/about_lg.jpg  768w,
+              ~/static/images/about_xl.jpg 1024w
             " sizes="70vmin" alt="about us image" class="w-full" />
           <p
             class=" font-VazirLight text-[1rem] md:text-[1.25rem] lg:text-[1.5rem] text-start pt-5 px-2 md:px-5 lg:px-8 leading-8 lg:leading-10 xl:leading-[2.75rem]">

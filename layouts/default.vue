@@ -3,7 +3,7 @@
     <NavBar />
 
     <div>
-      <Nuxt />
+      <Nuxt class="container mx-auto"/>
     </div>
 
     <FooterCom />
@@ -11,10 +11,8 @@
 </template>
 
 <style>
-body {
-  direction: rtl;
-  background-color: #f2f2f2;
-}
+
+
 </style>
 
 <script>
