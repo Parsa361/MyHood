@@ -22,6 +22,12 @@
   src: url(../Vazir-Medium.ttf) format('truetype');
 }
 
+@layer components {
+  .btn-article {
+    @apply inline-flex my-1 p-1 md:px-3 md:py-2 bg-yellowHood text-slate-600 rounded-tl-lg rounded-br-lg shadow-md hover:bg-yellow-700 hover:text-white active:scale-[0.8] text-[0.75rem] md:text-[1rem] lg:text-[1.25rem]
+  }
+}
+
 body {
   direction: rtl;
   background-color: #f2f2f2;
