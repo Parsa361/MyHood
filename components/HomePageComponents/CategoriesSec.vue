@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Categories text with 2 yellow Svg -->
-    <CategoryTitle>دسته بندی محصولات</CategoryTitle>
+    <CategoryTitle>دسته بندی ها</CategoryTitle>
 
 
 
@@ -30,7 +30,9 @@
           طراحی اساسا مورد استفاده قرار گیرد.</p>
         <!-- Button -->
         <div class="md:text-left text-center ml-5 my-2 font-VazirMedium">
-          <ButtonUI>جزئیات بیشتر</ButtonUI>
+          <NuxtLink to="#">
+            <ButtonUI>جزئیات بیشتر</ButtonUI>
+          </NuxtLink>
         </div>
       </div>
     </div>
