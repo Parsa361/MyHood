@@ -2,7 +2,7 @@
 <template>
     <div>
         <!-- Categories text with 2 yellow Svg -->
-        <CategoryTitle>پست های اینستاگرام</CategoryTitle>
+        <CategoryTitle>اینستاگرام</CategoryTitle>
 
 
         <section class="text-gray-600">
@@ -12,7 +12,7 @@
                     <div class="text-center lg:w-2/3 w-full">
                         <div class="shadow-lg p-2 md:p-5">
                             <h1 class="title-font mb-4 font-Lalezar tracking-wider text-gray-900 text-[1rem] md:text-[1.25rem] lg:text-[1.5rem]">
-                                درباره ما</h1>
+                                صفحه اینستاگرام</h1>
                             <p
                                 class="mb-8 leading-relaxed font-VazirLight line-clamp-4 sm:line-clamp-5 text-[1rem] md:text-[1.25rem] lg:text-[1.5rem]">
                                 لورم ایپسوم متن ساختگی
