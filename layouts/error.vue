@@ -6,7 +6,7 @@
           <h1 class="text-4xl font-VazirBold text-black mb-3" v-if="error.statusCode === 404">صفحه یافت نشد!!</h1>
           <h1 class="text-4xl font-VazirMedium text-black mb-3" v-else>پوزش, احتمالا خطایی رخ داده است!</h1>
           <p class="text-lg text-gray-600 mb-5 font-VazirLight">متاسفانه خطایی رخ داده است و صفحه در دسترس نیست. لطفا بعدا دوباره امتحان کنید.</p>
-          <NuxtLink to="/" class="bg-yellowHood hover:bg-yellowHood/70 text-white font-bold py-2 px-4 rounded font-VazirLight">بازگشت به صفحه اصلی</NuxtLink>
+          <NuxtLink to="/" class="bg-yellowHood hover:bg-yellowHood/70 text-gray-600 hover:text-white font-bold py-2 px-4 rounded font-VazirLight">بازگشت به صفحه اصلی</NuxtLink>
         </div>
       </div>
     </div>
