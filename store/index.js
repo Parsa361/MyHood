@@ -72,15 +72,15 @@ export const actions = {
         } else {
             token = localStorage.getItem('token')
             expirationTime = localStorage.getItem('tokenExpiration')
-            if (!token || new Date().getTime() > Number.parseInt(expirationTime)) {
-                console.log('No token or invalid token!');
-                localStorage.removeItem('token')
-                localStorage.removeItem('tokenExpiration')
-                Cookie.remove('jwt')
-                Cookie.remove('expirationDate')
-                vuexContext.commit('clearToken')
-                return
-            }
+        }
+        if (!token || new Date().getTime() > Number.parseInt(expirationTime)) {
+            console.log('No token or invalid token!');
+            vuexContext.commit('clearToken')
+            Cookie.remove('jwt')
+            Cookie.remove('expirationDate')
+            localStorage.removeItem('token')
+            localStorage.removeItem('tokenExpiration')
+            return
         }
         vuexContext.commit('setToken', token)
 
