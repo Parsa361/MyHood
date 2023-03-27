@@ -1,83 +1,81 @@
 <template>
-    <div class="container mx-auto my-[8rem]">
+    <div>
+        <CategoryTitle>ثبت نام</CategoryTitle>
 
-        <form class="font-Lalezar bg-white p-[2rem] rounded-tr-xl rounded-bl-xl" @submit.prevent="onSubmit">
+        <div class="max-w-lg shadow-xl my-10 text-center mx-auto">
+            <form class="font-Lalezar gap-y-5 p-10" action='#' @submit.prevent="onSubmit">
+                <div class="mb-[2rem]">
 
-            <div class="relative z-0 mb-[1.75rem] w-full group">
-                <input v-model="information.username" type="phone" name="floating_phone" id="floating_phone"
-                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-yellowHood focus:outline-none focus:ring-0 focus:border-yellowHood peer"
-                    placeholder=" " required="">
-                <label for="floating_phone"
-                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:right-0 peer-focus:text-yellowHood peer-focus:dark:text-yellowHood peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">شماره
-                    تماس</label>
-            </div>
-            <div class="relative z-0 mb-[1.75rem] w-full group">
-                <input v-model="password1" type="password" name="floating_password" id="floating_password"
-                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-yellowHood focus:outline-none focus:ring-0 focus:border-yellowHood peer"
-                    placeholder=" " required="">
-                <label for="floating_password"
-                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75  top-1 -z-10 origin-[0] peer-focus:right-0 peer-focus:text-yellowHood peer-focus:dark:text-yellowHood peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">رمز
-                    عبور</label>
-            </div>
-            <div class="relative z-0 mb-[1.75rem] w-full group">
-                <input v-model="password2" type="password" name="repeat_password" id="floating_repeat_password"
-                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-yellowHood focus:outline-none focus:ring-0 focus:border-yellowHood peer"
-                    placeholder=" " required="">
-                <label for="floating_repeat_password"
-                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75  top-1 -z-10 origin-[0] peer-focus:right-0 peer-focus:text-yellowHood peer-focus:dark:text-yellowHood peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">تکرار
-                    رمز عبور</label>
-            </div>
-            <div class="grid md:grid-cols-2 md:gap-6">
-                <div class="relative z-0 mb-[1.75rem] w-full group">
-                    <input v-model="information.firstname" type="text" name="floating_first_name"
-                        id="floating_first_name"
-                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-yellowHood focus:outline-none focus:ring-0 focus:border-yellowHood peer"
-                        placeholder=" " required="">
-                    <label for="floating_first_name"
-                        class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75  top-1 -z-10 origin-[0] peer-focus:right-0 peer-focus:text-yellowHood peer-focus:dark:text-yellowHood peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">نام</label>
+                    <!-- email -->
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900">ایمیل</label>
+                    <input v-model="email" type="email" id="email"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-yellow-400 focus:border-yellow-400 block w-full p-2.5 outline-none"
+                        placeholder="مثال = myhood@gmail.com" required="">
                 </div>
-                <div class="relative z-0 mb-[1.75rem] w-full group">
-                    <input v-model="information.lastname" type="text" name="floating_last_name" id="floating_last_name"
-                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-yellowHood focus:outline-none focus:ring-0 focus:border-yellowHood peer"
-                        placeholder=" " required="">
-                    <label for="floating_last_name"
-                        class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75  top-1 -z-10 origin-[0] peer-focus:right-0 peer-focus:text-yellowHood peer-focus:dark:text-yellowHood peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">نام
-                        خانوادگی</label>
+
+                <div class="mb-[2rem]">
+                    <!-- password 1 -->
+                    <label for="password" class="block mb-2 text-sm font-medium text-gray-900">رمز
+                        عبور</label>
+                    <input v-model="password1" type="password" id="password"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-yellow-400 focus:border-yellow-400 block w-full p-2.5 outline-none"
+                        placeholder="********" required="true">
                 </div>
-            </div>
 
-            <button type="submit"
-                class="text-white bg-yellowHood hover:bg-yellowHood focus:ring-4 focus:outline-none focus:ring-yellow-200 font-medium rounded-lg text-sm w-full sm:w-auto px-[2rem] py-2.5 text-center dark:bg-yellow-400 dark:hover:bg-yellow-300 dark:focus:ring-yellowHood">ثبت
-                نام</button>
-        </form>
+                <div class="mb-[2rem]">
+                    <!-- password 2 -->
+                    <label for="password2" class="block mb-2 text-sm font-medium text-gray-900">تکرار رمز
+                        عبور</label>
+                    <input v-model="password2" type="password" id="password2"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-yellow-400 focus:border-yellow-400 block w-full p-2.5 outline-none"
+                        placeholder="********" required="true">
+                </div>
 
+                <!-- Remember section -->
+                <div class="flex items-start mb-[2rem]">
+                    <div class="flex items-center h-5">
+                        <input id="remember" type="checkbox" value=""
+                            class="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-yellowHood">
+                    </div>
+                    <label for="remember" class="mr-2 text-sm font-medium text-gray-900">مرا به خاطر
+                        بسپار</label>
+                </div>
+
+                <div class="text-center">
+                    <ButtonUI type="submit">تایید</ButtonUI>
+                </div>
+            </form>
+        </div>
     </div>
 </template>
 
 <script>
+import ButtonUI from '~/components/ButtonUI.vue';
+import CategoryTitle from '~/components/CategoryTitle.vue';
 
 export default {
     data() {
         return {
-            information: {},
-            password1: '',
-            password2: '',
-        }
+            email: '',
+            password: '',
+            password1: "",
+            password2: "",
+        };
     },
     methods: {
-        async onSubmit() {
-            if (this.password1 == this.password2) {
-                this.information.password = this.password1
+        onSubmit() {
+            if (this.password1 === this.password2) {
+                this.password = this.password1;
             }
-            await this.$axios
-                .$post('/api/v1/users/', this.information)
-                .then(r => {
-                    console.log(r.data);
-                })
+            this.$store.dispatch('authenticateUser', {
+                email: this.email,
+                password: this.password
+            }).then(() => { this.$router.push('/about') })
+
 
         }
-    }
-
+    },
+    components: { ButtonUI, CategoryTitle }
 }
 
 </script>
