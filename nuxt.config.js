@@ -1,4 +1,7 @@
+const env = require('dotenv').config()
+
 export default {
+  env: env.parsed,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'MyHood',
@@ -38,6 +41,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/dotenv',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -48,10 +52,11 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: 'http://127.0.0.1:8000',
-  },
 
+  },
+  env: {
+
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     postcss: {
