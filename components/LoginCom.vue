@@ -12,8 +12,9 @@
             <div>
                 <form class="font-Lalezar gap-y-5" action='#' @submit.prevent="onSubmit">
                     <div class="mb-[2rem]">
+                        <div v-if="userNotExist" class="text-red-500 text-center text-sm my-2">{{ userNotExist }}</div>
                         <!-- email -->
-                        <label for="email" class="inline-block mb-2 text-sm font-medium text-gray-900">ایمیل</label>
+                        <label for="email" class="inline-block mb-2 text-sm text-gray-900">ایمیل</label>
                         <span class="inline-block">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="10" height="10">
                                 <path
@@ -24,13 +25,13 @@
                         <input v-model.trim="email" type="email" id="email"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-yellow-400 focus:border-yellow-400 block w-full p-2.5 outline-none"
                             placeholder="مثال = myhood@gmail.com" required>
-                        <div v-show="!email" class="text-red-500 text-sm mt-1">ایمیل را وارد کنید</div>
-                        <div v-show="email && !isValidEmail" class="text-red-500 text-sm mt-1">ایمیل معتبر وارد کنید</div>
+                        <div v-if="emailError" class="text-red-500 text-sm mt-1">{{ emailError }}</div>
+
                     </div>
 
                     <div class="mb-[2rem]">
                         <!-- password -->
-                        <label for="password" class="inline-block mb-2 text-sm font-medium text-gray-900">رمز
+                        <label for="password" class="inline-block mb-2 text-sm text-gray-900">رمز
                             عبور</label>
                         <span class="inline-block">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="10" height="10">
@@ -42,18 +43,9 @@
                         <input v-model.trim="password" type="password" id="password"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-yellow-400 focus:border-yellow-400 block w-full p-2.5 outline-none"
                             placeholder="********" required>
-                        <div v-show="!password" class="text-red-500 text-sm mt-1">رمز عبور را وارد کنید</div>
+                        <div v-if="passwordError" class="text-red-500 text-sm mt-1">{{ passwordError }}</div>
                     </div>
 
-                    <!-- Remember section -->
-                    <div class="flex items-start mb-[2rem]">
-                        <div class="flex items-center h-5">
-                            <input id="remember" type="checkbox" value=""
-                                class="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-yellowHood">
-                        </div>
-                        <label for="remember" class="mr-2 text-sm font-medium text-gray-900">مرا به خاطر
-                            بسپار</label>
-                    </div>
 
                     <div class="flex flex-col md:flex-row">
                         <!-- Submit button and empty field message -->
@@ -79,14 +71,11 @@ export default {
         return {
             email: '',
             password: '',
+            emailError: '',
+            passwordError: '',
+            userNotExist: '',
             isLogin: null,
             modalActive: false
-        }
-    },
-    computed: {
-        isValidEmail() {
-            const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-            return pattern.test(this.email)
         }
     },
     methods: {
@@ -94,20 +83,52 @@ export default {
             this.modalActive = !this.modalActive
             this.email = '';
             this.password = '';
+            this.emailError = '';
+            this.passwordError = '';
+            this.userNotExist = '';
         },
         onSubmit() {
-            if (!this.$store.getters.isAuthenticated) {
-                console.log('agha nabayad in chap she age dorost kar kone');
-                this.$store.dispatch('authenticateUser', {
-                    email: this.email,
-                    password: this.password,
-                    isLogin: true
-                })
-                    .then(() => {
-                        this.modalActive = false
-                        this.$router.push('/profile')
-                    })
+            this.emailError = ''
+            this.passwordError = ''
+
+            // Check email validity
+            if (!this.emailIsValid(this.email)) {
+                this.emailError = 'ایمیل وارد شده معتبر نیست';
+                return;
             }
+
+
+            // Check password validity
+            if (!this.passwordIsValid(this.password)) {
+                this.passwordError = 'رمز عبور باید حداقل 8 حرف داشته باشد'
+                return;
+            }
+
+
+            this.$store.dispatch('authenticateUser', {
+                email: this.email,
+                password: this.password,
+                isLogin: true
+            })
+                .then(() => {
+                    if (this.$store.getters.hasError) {
+                        this.userNotExist = 'کاربر ثبت نام نشده است'
+                        return;
+                    }
+                    this.modalActive = false
+                    this.$router.push('/profile')
+                })
+
+        },
+        emailIsValid(email) {
+            const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+            return pattern.test(email)
+        },
+        passwordIsValid(password) {
+            if (password.length < 8) {
+                return false;
+            }
+            return true;
         }
     },
     components: { BaseModal }
