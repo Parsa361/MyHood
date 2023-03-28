@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavBar />
+    <NavBar class="mb-5"/>
     <!-- Loading -->
     <div v-if="isLoading" class="flex items-center justify-center h-screen">
       <svg class="animate-spin h-12 w-12 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none"
