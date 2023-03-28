@@ -1,6 +1,6 @@
 <template>
     <div>
-        <NuxtLink to="/" class="font-Lalezar text-textGray text-md md:text-[1.125rem] lg:text-[1.5rem]">
+        <NuxtLink to="/" class="font-Lalezar text-textGray text-md text-responsive-100">
             MyHood
         </NuxtLink>
     </div>

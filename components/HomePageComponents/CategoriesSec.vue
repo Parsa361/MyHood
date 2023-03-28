@@ -14,13 +14,13 @@
         <img :src="require(`~/static/images/${cat.catImg}.png`)" :alt="cat.catTitle" class="object-cover object-center" />
       </div>
 
-      <!-- Text-->
+      <!-- Text -->
       <div class="flex flex-col md:max-w-sm lg:max-w-none lg:w-1/2 py-2 bg-white rounded-lg px-2"
         :class="index % 2 === 0 ? 'md:mr-auto lg:mr-5' : 'md:ml-auto lg:ml-5'">
-        <p class="text-center md:text-end font-Lalezar text-[1rem] md:text-[1.25rem] lg:text-[1.5rem] truncate">
+        <p class="text-center md:text-end font-Lalezar text-responsive-100 truncate">
           {{ cat.catTitle }}</p>
         <p
-          class="lg:flex text-center md:text-end font-VazirLight line-clamp-5 lg:line-clamp-6 xl:line-clamp-8 text-[1rem] md:text-[1.25rem] my-2">
+          class="lg:flex text-center md:text-end font-VazirLight line-clamp-5 lg:line-clamp-6 xl:line-clamp-8 text-responsive-75 my-2">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
           بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با
           هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و

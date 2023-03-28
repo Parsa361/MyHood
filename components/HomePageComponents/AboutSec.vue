@@ -11,10 +11,10 @@
                         src="~/static/images/Instagram.jpg">
                     <div class="text-center lg:w-2/3 w-full">
                         <div class="shadow-lg p-2 md:p-5">
-                            <h1 class="title-font mb-4 font-Lalezar tracking-wider text-gray-900 text-[1rem] md:text-[1.25rem] lg:text-[1.5rem]">
+                            <h1 class="mb-4 font-Lalezar tracking-wider text-gray-900 text-responsive-100">
                                 صفحه اینستاگرام</h1>
                             <p
-                                class="mb-8 leading-relaxed font-VazirLight line-clamp-4 sm:line-clamp-5 text-[1rem] md:text-[1.25rem] lg:text-[1.5rem]">
+                                class="mb-8 leading-relaxed font-VazirLight line-clamp-4 sm:line-clamp-5 text-responsive-100">
                                 لورم ایپسوم متن ساختگی
                                 با تولید سادگی نامفهوم از صنعت چاپ، و با
                                 استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم

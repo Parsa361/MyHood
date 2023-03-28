@@ -6,7 +6,7 @@
                 stroke-linecap="round" stroke-width="3" />
         </svg>
 
-        <span class="font-Lalezar text-[1rem] md:text-[1.25rem] lg:text-[1.5rem]">
+        <span class="font-Lalezar text-responsive-100">
             <slot />
         </span>
         <svg xmlns="http://www.w3.org/2000/svg" width="111" height="3" 

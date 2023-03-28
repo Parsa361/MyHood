@@ -2,7 +2,7 @@
     <footer class=" bg-white text-black font-VazirMedium drop-shadow-2xl mt-16">
         <div class="container mx-auto py-12 px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between">
             <div class="sm:w-1/2 mb-8 sm:mb-0">
-                <h2 class="text-[0.75rem] md:text-[1.25rem] lg:text-[1.5rem] font-bold text-black mb-4">آدرس ها و مسیر
+                <h2 class="text-responsive-75 font-bold text-black mb-4">آدرس ها و مسیر
                     ارتباط با ما</h2>
                 <ul class="text-gray-600 leading-relaxed">
                     <li class="mb-3">
@@ -19,7 +19,7 @@
 
             <!-- second column -->
             <div class="sm:w-1/2">
-                <h2 class="text-[0.75rem] md:text-[1.25rem] lg:text-[1.5rem] font-bold text-black mb-4">ما را در شبکه های
+                <h2 class="text-responsive-75 font-bold text-black mb-4">ما را در شبکه های
                     اجتماعی دنبال کنید
                 </h2>
 

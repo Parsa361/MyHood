@@ -6,7 +6,7 @@
         <div class="h-full relative">
           <img :src="slide.image" :alt='slide.title' class="w-full h-full">
           <span :class="index % 2 === 0 ? 'left-5 md:left-20 lg:left-36' : 'right-5 md:right-20 lg:right-36 text-white'"
-            class="absolute top-1/3 line-clamp-2 md:line-clamp-none max-w-[150px] sm:max-w-[200px] md:max-w-xs lg:max-w-md tracking-wider leading-8 font-VazirMedium text-[0.5rem] sm:text-[0.75rem] md:text-[1rem] lg:text-[1.5rem]">{{
+            class="absolute top-1/3 line-clamp-2 md:line-clamp-none max-w-[150px] sm:max-w-[200px] md:max-w-xs lg:max-w-md tracking-wider leading-8 font-VazirMedium text-responsive-75">{{
               slide.text }}</span>
         </div>
       </Slides>
