@@ -42,10 +42,6 @@ export const actions = {
                 localStorage.setItem('tokenExpiration', new Date().getTime() + Number.parseInt(data.expiresIn) * 1000)
                 Cookie.set('jwt', data.idToken)
                 Cookie.set('expirationDate', new Date().getTime() + Number.parseInt(data.expiresIn) * 1000)
-
-
-                console.log(data);
-                console.log('expire time :' + new Date().getTime() + Number.parseInt(data.expiresIn) * 1000);
             })
             .catch(e => {
                 vuexContext.commit('setError', e.message)
@@ -75,15 +71,18 @@ export const actions = {
         }
         if (!token || new Date().getTime() > Number.parseInt(expirationTime)) {
             console.log('No token or invalid token!');
-            vuexContext.commit('clearToken')
-            Cookie.remove('jwt')
-            Cookie.remove('expirationDate')
-            localStorage.removeItem('token')
-            localStorage.removeItem('tokenExpiration')
+            vuexContext.dispatch('logout')
             return
         }
         vuexContext.commit('setToken', token)
 
+    },
+    logout(vuexContext) {
+        vuexContext.commit('clearToken')
+        Cookie.remove('jwt')
+        Cookie.remove('expirationDate')
+        localStorage.removeItem('token')
+        localStorage.removeItem('tokenExpiration')
     }
 
 }
@@ -91,8 +90,8 @@ export const getters = {
     isAuthenticated(state) {
         return state.token != null
     },
-    error(state) {
-        return state.error
+    hasError(state) {
+        return state.error != null
     },
     loading(state) {
         return state.loading
