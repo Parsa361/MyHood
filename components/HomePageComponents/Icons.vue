@@ -4,7 +4,7 @@
         <ul class="hidden md:flex flex-row justify-around items-center gap-x-2 font-VazirLight">
             <!-- Item 1 -->
             <li
-                class="flex flex-col justify-center items-center gap-y-2 shadow-yellowHood shadow-md rounded-full p-5 md:h-40 md:w-40 lg:h-60 lg:w-60 md:text-[0.75rem] lg:text-[1rem] hover:bg-yellowHood/70 ">
+                class="flex flex-col justify-center items-center gap-y-2 shadow-yellowHood shadow-md rounded-full p-5 md:h-40 md:w-40 lg:h-60 lg:w-60 hover:bg-yellowHood/70">
                 <svg xmlns="http://www.w3.org/2000/svg" class="md:w-10 md:h-5 lg:w-[4.25rem] lg:h-[2rem]"
                     viewBox="0 0 71.79 33.802">
                     <g id="Layer_2" transform="translate(-86.1 -176)">
@@ -27,12 +27,12 @@
                         </g>
                     </g>
                 </svg>
-                <span>تحویل به روز</span>
+                <span class="text-responsive-75 text-center">تحویل به روز</span>
 
                 <!-- Item 2 -->
             </li>
             <li
-                class="flex flex-col justify-center items-center gap-y-2 shadow-yellowHood shadow-md rounded-full p-5 md:h-40 md:w-40 lg:h-60 lg:w-60 md:text-[0.75rem] lg:text-[1rem] hover:bg-yellowHood/70 ">
+                class="flex flex-col justify-center items-center gap-y-2 shadow-yellowHood shadow-md rounded-full p-5 md:h-40 md:w-40 lg:h-60 lg:w-60 hover:bg-yellowHood/70">
                 <svg xmlns="http://www.w3.org/2000/svg" class="md:w-10 md:h-5 lg:w-[2.75rem] lg:h-[2rem]"
                     viewBox="0 0 46.24 33.802">
                     <g id="_4047323_delivery_moped_retro_scooter_transport_icon"
@@ -58,12 +58,12 @@
                             transform="translate(-422.494 -152.997)" fill="#231f20" />
                     </g>
                 </svg>
-                <span>ارسال به تمام نقاط کشور</span>
+                <span class="text-responsive-75 text-center">ارسال به تمام نقاط کشور</span>
 
                 <!-- Item 3 -->
             </li>
             <li
-                class="flex flex-col justify-center items-center gap-y-2 shadow-yellowHood shadow-md rounded-full p-5 md:h-40 md:w-40 lg:h-60 lg:w-60 md:text-[0.75rem] lg:text-[1rem] hover:bg-yellowHood/70 ">
+                class="flex flex-col justify-center items-center gap-y-2 shadow-yellowHood shadow-md rounded-full p-5 md:h-40 md:w-40 lg:h-60 lg:w-60 hover:bg-yellowHood/70">
                 <svg xmlns="http://www.w3.org/2000/svg" class="md:w-10 md:h-5 lg:w-[2rem] lg:h-[2rem]"
                     viewBox="0 0 33.821 33.802">
                     <g id="Layer_2" transform="translate(-78.1 -78.2)">
@@ -83,12 +83,12 @@
                         </g>
                     </g>
                 </svg>
-                <span>ضمانت قیمت</span>
+                <span class="text-responsive-75 text-center">ضمانت قیمت</span>
 
                 <!-- Item 4 -->
             </li>
             <li
-                class="flex flex-col justify-center items-center gap-y-2 shadow-yellowHood shadow-md rounded-full p-5 md:h-40 md:w-40 lg:h-60 lg:w-60 md:text-[0.75rem] lg:text-[1rem] hover:bg-yellowHood/70 ">
+                class="flex flex-col justify-center items-center gap-y-2 shadow-yellowHood shadow-md rounded-full p-5 md:h-40 md:w-40 lg:h-60 lg:w-60 hover:bg-yellowHood/70">
                 <svg xmlns="http://www.w3.org/2000/svg" class="md:w-10 md:h-5 lg:w-[1.75rem] lg:h-[2rem]"
                     viewBox="0 0 26.433 33.802">
                     <g id="_4265038_badge_guarantee_quality_ribbon_warranty_icon"
@@ -101,7 +101,7 @@
                             transform="translate(0 0)" />
                     </g>
                 </svg>
-                <span>ضمانت بازگشت در صورت لزوم</span>
+                <span class="text-responsive-75 text-center">ضمانت بازگشت کالا</span>
 
             </li>
         </ul>
