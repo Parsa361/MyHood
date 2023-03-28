@@ -1,15 +1,11 @@
 <template>
     <!-- This is our custom modal to show info texts -->
     <Transition name="modal-outer">
-        <div v-show="modalActive"
+        <div v-show="modalActive" @click="closeModal"
             class="fixed w-full bg-black bg-opacity-70 h-screen top-0 left-0 flex justify-center px-8">
             <Transition name="modal-inner">
-                <div v-if="modalActive" class="p-10 bg-white self-start mt-32 max-w-screen-md">
+                <div v-if="modalActive" @click.stop="" class="p-10 bg-white self-start mt-32 max-w-screen-md">
                     <slot />
-                    <div class="text-center">
-                        <button @click="$emit('close-modal')"
-                            class="text-black mt-8 bg-yellowHood/70 py-2 px-6 rounded-md">بستن</button>
-                    </div>
                 </div>
             </Transition>
         </div>
@@ -23,6 +19,11 @@ export default {
             required: true
         },
     },
+    methods: {
+        closeModal() {
+            this.$emit('close-modal')
+        }
+    }
 
 }
 </script>
