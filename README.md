@@ -1,4 +1,14 @@
 # MyHood
+## Features
+<li>Sign up and login ( have form validation ) with both localhost and cookie</li>
+<li>Post and get articles from firebase</li>
+<li>Fully Responsive</li>
+
+## Technologies and libraries
+<li>Nuxt 2 (options api)</li>
+<li>Tailwind Css</li>
+<li>axios - to make requests to the firebase APIs</li>
+<li>Vuex store</li>
 
 ## Build Setup
 
